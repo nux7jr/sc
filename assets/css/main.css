@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loader {
+    position: fixed;
+    width: 100vw;
+    height: 200vh;
+    pointer-events: none;
+    z-index: 999999999;
+    visibility: hidden;
+    /* border-radius: 400px; */
+    opacity: 0;
+}
+
+.is-transitioning {
+    pointer-events: none;
+    cursor: progress;
+}
+
+.rounded-4xl {
+    border-radius: 2rem;
+}
+/* *::selection {
+    background-color: #C9DEE3;
+} */
