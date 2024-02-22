@@ -9,7 +9,6 @@
     pointer-events: none;
     z-index: 999999999;
     visibility: hidden;
-    /* border-radius: 400px; */
     opacity: 0;
 }
 
@@ -21,6 +20,29 @@
 .rounded-4xl {
     border-radius: 2rem;
 }
-/* *::selection {
-    background-color: #C9DEE3;
-} */
+.smart-style {
+    max-width: none;
+    color: rgb(161 161 170);
+}
+.smart-style  p {
+    font-size: .875rem;
+    line-height: 1.5rem;
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+}
+.smart-style  h2 {
+    font-size: 1.6666667em;
+    margin-top: 1.8666667em;
+    margin-bottom: 1.0666667em;
+    line-height: 1.3333333;
+    color: white;
+}
+.smart-style ul {
+    margin-bottom: 1.3333333em;
+    padding-left: 1.5555556em;
+    list-style-type: disc;
+}
+.smart-style a {
+    color: #7f4dff;
+    text-decoration: underline;
+}

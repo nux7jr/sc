@@ -2,48 +2,58 @@
     <div class="p-8 flex flex-col max-w-screen-2xl mx-auto">
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-px">
             <div class="text-base tracking-wide uppercase text-black font-medium p-8 bg-accent-500 rounded-3xl">
-                <p class="text-xs" x-text="'Copyright © ' + year + ' Lexington Themes. All Rights Reserved.'">Copyright ©
-                    {{ currentDate.getFullYear() }} Smart Core. All Rights Reserved.</p>
+                <p class="text-xs">
+                    Copyright © {{ currentDate.getFullYear() }} Smart Core. Все права защищены.</p>
             </div>
             <div class="grid grid-cols-1 gap-px sm:grid-cols-3 text-black">
                 <ul role="list" class="p-8 bg-accent-600 rounded-4xl">
                     <li>
-                        <p class="text-base font-medium tracking-wide uppercase">
-                            Navigation
-                        </p>
-                        <ul role="list" class="mt-4">
-                            <li><a class="hover:underline" href="/">Overview</a></li>
-                            <li> <a class="hover:underline" href="/system/styleguide">Style Guide</a> </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul role="list" class="p-8 bg-accent-600 rounded-4xl">
-                    <li>
-                        <p class="text-base font-medium tracking-wide uppercase">
-                            Stay updated
+                        <p class="text-zinc-300 font-medium tracking-wide uppercase">
+                            Навигация
                         </p>
                         <ul role="list" class="mt-4">
                             <li>
-                                <a class="hover:underline" href="https://www.lexingtonthemes.com/license">License</a>
+                                <NuxtLink class="hover:underline text-grey" to="/overview">
+                                    Представление
+                                </NuxtLink>
                             </li>
-                            <li>
-                                <a class="hover:underline"
-                                    href="https://www.lexingtonthemes.com/documentation">documentation</a>
+                            <li> 
+                                <NuxtLink class="hover:underline text-grey" to="/style">
+                                    Стайлгайд
+                                </NuxtLink> 
                             </li>
                         </ul>
                     </li>
                 </ul>
                 <ul role="list" class="p-8 bg-accent-600 rounded-4xl">
                     <li>
-                        <p class="text-base font-medium tracking-wide uppercase">
-                            Socials
+                        <p class="text-zinc-300 font-medium tracking-wide uppercase">
+                            Оставаться в курсе
                         </p>
                         <ul role="list" class="mt-4">
                             <li>
-                                <a class="hover:underline" href="https://twitter.com/lexingtonthemes">@lexingtonthemes</a>
+                                <NuxtLink class="hover:underline text-grey" to="/blog">
+                                    Блог
+                                </NuxtLink>
                             </li>
                             <li>
-                                <a class="hover:underline" href="https://twitter.com/Mike_andreuzza">@Mike_andreuzza</a>
+                                <NuxtLink class="hover:underline text-grey"
+                                    to="/team">Команда
+                                </NuxtLink>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul role="list" class="p-8 bg-accent-600 rounded-4xl">
+                    <li>
+                        <p class="text-zinc-300 font-medium tracking-wide uppercase">
+                            Соц сети
+                        </p>
+                        <ul role="list" class="mt-4">
+                            <li>
+                                <NuxtLink class="hover:underline text-grey" href="https://t.me/warm_ice_cream">
+                                    @warm_ice_cream
+                                </NuxtLink>
                             </li>
                         </ul>
                     </li>
@@ -51,13 +61,14 @@
             </div>
             <div class="col-span-full">
                 <div class="mt-6 flex flex-col gap-px"> <label for="email-address" class="sr-only">
-                        Email address
+                        Адрес электронной почты
                     </label>
                     <input id="email-address" name="email" type="email" autocomplete="email" required
-                        class="block items-center px-12 text-center w-full rounded-full h-14 border-0 bg-zinc-900 relative border-trasnparent py-1.5 lg:h-24 text-white ring-0 ring-inset ring-transparent lg:text-4xl placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-accent-500 sm:text-sm sm:leading-6"
-                        placeholder="Enter your email">
+                        class="block items-center px-12 text-center w-full rounded-full h-14 border-0 bg-zinc-900 relative border-trasnparent py-1.5 lg:h-24 text-zinc-300 ring-0 ring-inset ring-transparent lg:text-4xl placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-accent-500 sm:text-sm sm:leading-6"
+                        placeholder="Адрес электронной почты">
                     <button type="submit"
-                        class="pl-4 lg:pl-12 lg:text-4xl pr-2 bg-zinc-900 border-zinc-900 duration-200 hover:border-zinc-900 h-12 lg:h-24 text-white justify-between uppercase border-2 rounded-full inline-flex items-center">Subscribe
+                        class="pl-4 lg:pl-12 lg:text-4xl pr-2 bg-zinc-900 border-zinc-900 duration-200 hover:border-zinc-900 h-12 lg:h-24 text-zinc-300 justify-between uppercase border-2 rounded-full inline-flex items-center">
+                        Подписаться
                         <div
                             class="bg-white h-8 w-8 lg:h-20 lg:w-20 text-black inline-flex items-center justify-center rounded-full">
                             <span>

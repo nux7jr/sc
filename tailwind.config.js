@@ -10,6 +10,7 @@ export default {
   ],
   theme: {
     colors: {
+      'grey': '#a1a1aa',
       'white': '#ffffff',
       'black': "#273846",
       'zinc': {
@@ -124,6 +125,7 @@ export default {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('tailwind-scrollbar')
   ],
 }
 

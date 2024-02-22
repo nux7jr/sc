@@ -1,7 +1,7 @@
 <template>
-    <div>
-        about
-    </div>
+    <SectionPage>
+        <UiH1>О нас</UiH1>
+    </SectionPage>
 </template>
 <script setup>
 useHead({

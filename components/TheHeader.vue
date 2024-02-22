@@ -95,6 +95,7 @@ function headerHide() {
 }
 watch(() => route.path, async () => {
   await headerHide();
+  open.value = false;
   await headerShow();
 });
 </script>

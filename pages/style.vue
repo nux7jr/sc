@@ -2,9 +2,9 @@
     <section>
         <div class="w-full px-8 py-24 mx-auto max-w-screen-2xl mt-24">
             <div class="pb-4">
-                <p class="text-2xl lg:text-7xl tracking-tighter text-white font-medium uppercase">
-                    Smart Core style guide
-                </p>
+                <UiH1>
+                    СТАЙЛГАЙД
+                </UiH1>
                 <div class="mt-12 lg:mt-24">
                     <div class="pb-5">
                         <p class="text-3xl tracking-tighter text-white uppercase"> <span
