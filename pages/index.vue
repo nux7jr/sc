@@ -1,10 +1,10 @@
 <template>
     <div>
         <SectionPage class="text-center">
-            <p class="text-2xl lg:text-7xl tracking-tighter text-white font-medium uppercase">
+            <p class="text-2xl lg:text-7xl tracking-tighter text-white font-medium uppercase special-text">
                 Привет от
                 <span class="lg:block"></span>
-                <span class="text-accent-500">Smart</span>
+                <span class="highlight">Smart</span>
                 core
             </p>
             <div class="max-w-lg mt-12 mx-auto">
@@ -36,6 +36,25 @@
     </div>
 </template>
 <script setup>
+import { gsap } from 'gsap/all';
+onMounted(() => {
+    const specialText = document.querySelector('.special-text');
+    const smartText = specialText.querySelector('.highlight');
+
+    const letters = smartText.innerText.split('');
+    smartText.innerHTML = letters.map(letter => `<span>${letter}</span>`).join('');
+    
+    const spans = smartText.querySelectorAll('span');
+    setTimeout(() => {
+    spans.forEach((span, index) => {
+        gsap.to(span, {
+            duration: 0.4,
+            color: "#7F4DFF",
+            delay: index * 0.2,
+        });
+    });
+    }, 1000)
+})
 useHead({
     title: "Главная"
 })

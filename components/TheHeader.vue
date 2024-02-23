@@ -51,15 +51,15 @@
         </div>
         <nav :class="{ 'flex': open, 'hidden': !open }"
           class="flex-col items-center text-base text-white tracking-wide font-light uppercase gap-6 flex-grow md:pb-0 md:flex md:justify-end md:flex-row">
-          <NuxtLink class="hover:text-accent-500 p-2 lg:ml-auto" to="/overview">
+          <NuxtLink class="duration-200 font-normal hover:text-accent-500 p-2 lg:ml-auto" to="/overview">
             Представление
           </NuxtLink>
-          <NuxtLink class="hover:text-accent-500 p-2" to="/style">
+          <NuxtLink class="duration-200 font-normal hover:text-accent-500 p-2" to="/style">
             Стайлгайд
           </NuxtLink>
           <div class="flex justify-center">
             <NuxtLink
-              class="py-1 pl-4 duration-200 pr-2 gap-12 border-accent-500 bg-accent-500 hover:text-black h-12 hover:bg-white text-white justify-between uppercase border-2 hover:border-white rounded-full inline-flex items-center w-full"
+              class="py-1 pl-4 font-normal duration-200 pr-2 gap-12 border-accent-500 bg-accent-500 hover:text-black h-12 hover:bg-white text-white justify-between uppercase border-2 hover:border-white rounded-full inline-flex items-center w-full"
               to="/contact">
               Связаться
               <div class="bg-black h-8 w-8 text-white inline-flex items-center justify-center rounded-full">

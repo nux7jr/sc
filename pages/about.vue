@@ -33,7 +33,8 @@
             <a>Some link</a>
             <img src="/images/temp/about1.jpg"/>
     </div>
-</SectionPage></template>
+    </SectionPage>
+</template>
 <script setup>
 useHead({
     title: "О нас"

@@ -1,6 +1,6 @@
 <template>
     
-    <SectionPage>
+    <SectionPage class="min-h-screen">
         <UiH1 class="text-center">СВЯЗАТЬСЯ</UiH1>
         <div class="max-w-md mx-auto flex flex-col text-center">        
                 <form class="flex flex-col gap-px mx-auto mt-8" action="#" method="POST">
