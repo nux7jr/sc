@@ -51,10 +51,10 @@
         </div>
         <nav :class="{ 'flex': open, 'hidden': !open }"
           class="flex-col items-center text-base text-white tracking-wide font-light uppercase gap-6 flex-grow md:pb-0 md:flex md:justify-end md:flex-row">
-          <NuxtLink class="hover:text-accent-500 h-9 p-2 lg:ml-auto" to="/overview">
+          <NuxtLink class="hover:text-accent-500 p-2 lg:ml-auto" to="/overview">
             Представление
           </NuxtLink>
-          <NuxtLink class="hover:text-accent-500 h-9 p-2" to="/style">
+          <NuxtLink class="hover:text-accent-500 p-2" to="/style">
             Стайлгайд
           </NuxtLink>
           <div class="flex justify-center">
@@ -96,7 +96,7 @@ function headerHide() {
 watch(() => route.path, async () => {
   await headerHide();
   open.value = false;
-  await headerShow();
+  headerShow();
 });
 </script>
   

@@ -21,3 +21,8 @@
         </div>
     </SectionPage>
 </template>
+<script setup>
+useHead({
+    title: "Команда"
+})
+</script>

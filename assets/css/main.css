@@ -24,7 +24,14 @@
     max-width: none;
     color: rgb(161 161 170);
 }
-.smart-style  p {
+.smart-style * {
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+}
+.smart-style img {
+    width: 100%;
+}
+.smart-style p {
     font-size: .875rem;
     line-height: 1.5rem;
     margin-top: 1.3333333em;

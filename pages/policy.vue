@@ -123,3 +123,8 @@
         </div>
     </SectionPage>
 </template>
+<script setup>
+useHead({
+    title: "Политика"
+})
+</script>
